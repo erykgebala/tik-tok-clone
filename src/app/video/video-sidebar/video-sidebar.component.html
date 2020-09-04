@@ -1,1 +1,14 @@
-<p>video-sidebar works!</p>
+<div class="sidebar-container">
+  <div class="item" (click)="likeVideo()">
+    <mat-icon>favorite_border</mat-icon>
+    <p>{{liked}}</p>
+  </div>
+  <div class="item" (click)="commentVideo()">
+    <mat-icon>comment</mat-icon>
+    <p>{{comments}}</p>
+  </div>
+  <div class="item" (click)="shareVideo()">
+    <mat-icon>share</mat-icon>
+    <p>{{shared}}</p>
+  </div>
+</div>

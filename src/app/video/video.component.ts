@@ -1,4 +1,5 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
+import {VideoModel} from './videoModel';
 
 @Component({
   selector: 'app-video',
@@ -8,7 +9,7 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 export class VideoComponent implements OnInit {
 
   @ViewChild('videoPlayer', {static: true}) videoPlayer: ElementRef;
-
+  @Input() video: VideoModel;
   playing = false;
 
   constructor() {

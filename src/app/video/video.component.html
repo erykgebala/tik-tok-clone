@@ -1,5 +1,8 @@
 <div class="one-video">
   <video class="video-player" #videoPlayer (click)="handleClick()" width="400"
-         src="https://v16m.tiktokcdn.com/71ba9711984aa4d65a80c4a94ca0c367/5f51958a/video/tos/useast2a/tos-useast2a-ve-0068c004/53f364839c194731b80b5c8f61bd1ea8/?a=1233&br=1186&bt=593&cr=0&cs=0&cv=1&dr=0&ds=3&er=&l=20200903191647010189196070441F5B20&lr=tiktok_m&mime_type=video_mp4&qs=0&rc=ajpqaWh1czNmdjMzNTczM0ApOWQ1PGU1Ojw4Nzc1OWc8M2dwb2BvcDUtcjFfLS0zMTZzcy9iLmEtL2EwXl4xXjRjMS46Yw%3D%3D&vl=&vr=" loop ></video>
-  <app-video-footer></app-video-footer>
+         [src]="video.url" loop ></video>
+  <app-video-footer [channel]="video.channel" [desc]="video.desc"
+            [song]="video.song"></app-video-footer>
+  <app-video-sidebar [comments]="video.comments" [liked]="video.liked"
+                     [shared]="video.shared"></app-video-sidebar>
 </div>

@@ -1,0 +1,15 @@
+.sidebar-container {
+  position: absolute;
+  right: 35px;
+  bottom: 110px;
+  z-index: 2;
+  color: #fff;
+}
+.item {
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.item p {
+  margin: 5px 0;
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-video-sidebar',
@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoSidebarComponent implements OnInit {
 
+  @Input() liked;
+  @Input() comments;
+  @Input() shared;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  likeVideo() {
+    this.liked++;
+  }
+
+  commentVideo() {
+    this.comments++;
+  }
+
+  shareVideo() {
+    this.shared++;
+  }
 }
