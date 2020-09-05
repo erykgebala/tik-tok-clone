@@ -8,6 +8,7 @@ import {VideoSidebarComponent} from './video/video-sidebar/video-sidebar.compone
 import {NgTickerModule} from 'ng-ticker';
 import {MatIconModule} from '@angular/material/icon';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     NgTickerModule,
     BrowserAnimationsModule,
     MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

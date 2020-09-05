@@ -1,8 +1,5 @@
 <div class="app-container">
-  <div class="video-container">
-    <app-video [video]="video"></app-video>
-    <app-video [video]="video"></app-video>
-    <app-video [video]="video"></app-video>
-    <app-video [video]="video"></app-video>
+  <div class="video-container" >
+    <app-video *ngFor="let video of videos" [video]="video"></app-video>
   </div>
 </div>
